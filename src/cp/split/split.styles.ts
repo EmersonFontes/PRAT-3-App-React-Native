@@ -25,7 +25,7 @@ const ViewColuna = styled.View<{$size:string,$background:string}>`
 
 const ViewLinha = styled.View<{$size:string,$background:string}>`
     display: flex;
-   flex: 1;
+    flex: 1;
     background-color: ${(p) => p.$background};
     width: 100%;
     border: 1px;
