@@ -16,7 +16,7 @@ const SplitBoard:React.ElementType<SplitProps> = ({size,direcao,zona1,zona2}) =>
         { direcao == "linha" &&
             <>
               <ViewLinha $size={size} $background='#f31616'>{zona1}</ViewLinha>
-              <ViewLinha $size={`calc(100% - ${size})`} $background='#000000'>{zona2}</ViewLinha>
+              <ViewLinha $size={`calc(100% - ${size})`} $background='#e6e5e5'>{zona2}</ViewLinha>
             </>
         }
 

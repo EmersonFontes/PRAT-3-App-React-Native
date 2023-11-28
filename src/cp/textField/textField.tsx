@@ -1,9 +1,18 @@
-import {View} from 'react-native'
-
-const TextField: React.ElementType<any> = () => {
+import {TextInput} from 'react-native'
+import { TextFieldProps } from './textField.types';
+import { TextFieldSy } from './textField.styles';
+const TextField: React.ElementType<TextFieldProps> = ({maxLength,numberLines,onChangeText,value,styles}) => {
 
     return (
-        <View></View>
+        <TextFieldSy background={styles.background} color={styles.color}
+        editable={true}
+        multiline
+        numberOfLines={numberLines}
+        maxLength={maxLength}
+        onChangeText={onChangeText}
+        value={value}
+        
+      />
     );
 }
 
