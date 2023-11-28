@@ -1,3 +1,4 @@
+
 import ModalProps from "./modal.types";
 import { Button } from "../button";
 import { ViewPrincipal, ViewCentral, ViewFinal, ViewTopo, Botao, Texto } from "./modal.style";
@@ -22,4 +23,5 @@ const Modal:React.ElementType<ModalProps> = ({isOpen,setModal,title,children,bgC
 
     return null;
 }
+
 export {Modal};

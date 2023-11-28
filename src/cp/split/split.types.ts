@@ -1,3 +1,4 @@
+
 import React from "react"
 import {GestureResponderEvent} from "react-native"
 interface SplitProps  {

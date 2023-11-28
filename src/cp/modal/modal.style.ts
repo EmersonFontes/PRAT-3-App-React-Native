@@ -1,3 +1,4 @@
+
 import styled from "styled-components/native"
 
 const ViewPrincipal = styled.View<{$background:string}>`
@@ -74,4 +75,5 @@ const Botao = styled.Button`
   }
 
 `;
+
 export {ViewPrincipal, ViewTopo, ViewCentral, ViewFinal, Botao, Texto}

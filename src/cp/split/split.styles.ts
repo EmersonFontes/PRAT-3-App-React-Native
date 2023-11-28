@@ -1,4 +1,3 @@
-
 import styled from 'styled-components/native';
 
 const ViewPrincipal = styled.View<{$direcao:string}>`
@@ -35,4 +34,3 @@ const ViewLinha = styled.View<{$size:string,$background:string}>`
 `;
 
 export {ViewColuna,ViewLinha,ViewPrincipal};
- 

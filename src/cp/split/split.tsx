@@ -1,3 +1,4 @@
+
 import React from "react";
 import { SplitProps } from "./split.types";
 import { ViewColuna, ViewLinha, ViewPrincipal} from './split.styles';
@@ -23,5 +24,6 @@ const SplitBoard:React.ElementType<SplitProps> = ({size,bgColorZona1,bgColorZona
       </ViewPrincipal>
     );
   };
+
 
   export {SplitBoard}
