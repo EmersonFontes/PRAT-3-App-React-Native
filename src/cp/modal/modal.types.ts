@@ -4,7 +4,8 @@ interface ModalProps {
     isOpen:boolean
     setModal: ()=> void
     children ?: ReactNode
-    title: String
+    title: string,
+    bgColor: string
 }
 
 export default ModalProps

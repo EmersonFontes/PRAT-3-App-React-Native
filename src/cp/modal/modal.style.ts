@@ -1,13 +1,12 @@
 import styled from "styled-components/native"
 
-const ViewPrincipal = styled.View`
-    position: absolute;
-    
+const ViewPrincipal = styled.View<{$background:string}>`
+    position: absolute; 
+    flex: 1;
     top: 37.5%;
     left: 12.5%;
     width: 75%;
     height: 25%;
-    background: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -15,11 +14,11 @@ const ViewPrincipal = styled.View`
     border-radius: 15px;
     border: 1px;
     padding: 10px;
-    background-color: white;
+    background-color: ${p=>p.$background} ;
     z-index: 1;
 `;
 
-const ViewTopo = styled.View`
+const ViewTopo = styled.View<{$background:string}>`
 
     display: flex;
     position: relative;
@@ -27,10 +26,11 @@ const ViewTopo = styled.View`
     width: 100%;
     align-items: center;
     justify-content: center;
+    background-color: ${p=>p.$background};
     
 `;
 
-const ViewCentral = styled.View`
+const ViewCentral = styled.View<{$background:string}>`
 
     display: flex;
     position: relative;
@@ -38,17 +38,20 @@ const ViewCentral = styled.View`
     height: 70%;
     justify-content: center;
     align-items: center;
+    background-color: ${p=>p.$background};
     
 `;
 
-const ViewFinal = styled.View`
+const ViewFinal = styled.View<{$background:string}>`
 
     display: flex;
     width: 100%;
     height: 15%;
     position: relative;
     align-items: center;
-    justify-content: center;    
+    justify-content: center;
+    background-color: ${p=>p.$background};
+    
     
 `;
 
